@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MorningBriefBot 的 Google 日曆資料使用、儲存、傳送、保留與刪除說明。">
+<title>隱私權政策｜MorningBriefBot</title>
+<style>*{box-sizing:border-box}html{color-scheme:light}body{margin:0;background:#f7f8f3;color:#203a30;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.85}a{color:#1d6348;text-underline-offset:4px;overflow-wrap:anywhere}a:focus-visible{outline:3px solid #a06422;outline-offset:5px}header,main,footer{width:min(100% - 40px,800px);margin-inline:auto}header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:25px;border-bottom:1px solid #d7dfd3}.brand{font-size:17px;font-weight:750;text-decoration:none;letter-spacing:-.3px}nav{display:flex;gap:20px;font-size:14px}nav a[aria-current=page]{font-weight:700}main{padding-block:56px 48px}.eyebrow{font-size:13px;letter-spacing:.12em;font-weight:700;color:#5c715f;margin:0 0 12px}h1{font-size:clamp(32px,6vw,48px);line-height:1.25;letter-spacing:-.03em;margin:0 0 22px}h2{font-size:22px;line-height:1.4;margin:0 0 12px}p{margin:0 0 16px}.lead{font-size:20px;line-height:1.85;max-width:700px}.meta{color:#57675d;font-size:14px}section{margin-top:34px;padding-top:28px;border-top:1px solid #d7dfd3}.note{padding:20px 24px;background:#eaf0e3;border-left:3px solid #64805b;margin-top:28px}.note p:last-child,section p:last-child{margin-bottom:0}footer{border-top:1px solid #d7dfd3;padding-block:22px 36px;font-size:14px;color:#57675d}footer p{margin:0}ul{padding-left:1.4em;margin:0 0 16px}li+li{margin-top:8px}@media(max-width:520px){header,main,footer{width:calc(100% - 36px)}header{align-items:flex-start;flex-direction:column;gap:8px;padding-block:18px}main{padding-top:36px}.lead{font-size:18px}nav{gap:22px}.note{padding:18px}section{margin-top:28px;padding-top:24px}}</style>
+</head>
+<body>
+<header><a class="brand" href="index.html">MorningBriefBot</a><nav aria-label="主要導覽"><a href="index.html">首頁</a><a href="privacy.html" aria-current="page">隱私權政策</a></nav></header>
+<main>
+<p class="eyebrow">資料使用說明</p>
+<h1>隱私權政策</h1>
+<p class="meta">最後更新：2026-10-19</p>
+<p>本政策說明 MorningBriefBot 如何處理 Google 日曆資料及產生的晨報。本工具供超市內部使用。</p>
+<section aria-labelledby="use"><h2 id="use">讀取的資料與用途</h2><p>經帳號持有人授權後，MorningBriefBot 透過 Google 桌面應用程式 OAuth，以 calendar.readonly 唯讀權限取得指定日曆的活動資訊，用於產生晨報中的活動預告。</p><p>晨報整理使用活動標題（summary）、開始時間（start）及結束時間（end）。Google Calendar API 預設回傳的活動物件可能包含其他欄位，因此 API 取得的資料不應理解為僅限上述三個欄位。</p><p>活動預告會與日期、天氣資訊整合為晨報。此唯讀權限不會用於新增、修改或刪除日曆活動。</p></section>
+<section aria-labelledby="transfer"><h2 id="transfer">儲存與傳送</h2><p>Google 授權憑證與整理後的快取儲存在本機。晨報文字及狀態資訊會透過 HTTPS 傳送至 QueryGateway 雲端服務，再供小蔬寶 LINE 在相關對話或群組中回覆查詢。</p><p>晨報內含的日曆活動資訊會隨晨報傳送，並可由該 LINE 對話或群組中的接收者閱讀。</p></section>
+<section aria-labelledby="retention"><h2 id="retention">保留與刪除</h2><p>本機最新快取及雲端最新晨報會在下次成功更新時覆寫。目前沒有適用於所有資料副本的統一自動刪除期限。</p><p>快取可在 72 小時內作為備援使用；72 小時是備援使用期限，不代表資料會在期限到達後自動刪除。</p><p>平台紀錄、備份，以及已送出的 LINE 訊息可能另有留存，不會因最新快取或晨報更新而一併刪除。</p><p>如需刪除資料，請聯絡管理者，確認可處理的資料副本與刪除範圍。</p></section>
+<section aria-labelledby="revoke"><h2 id="revoke">撤銷 Google 授權</h2><p>帳號持有人可在 Google 帳戶設定中撤銷 MorningBriefBot 的存取權限。撤銷後，程式無法再透過該授權進行新的日曆存取；撤銷授權不會自動刪除先前產生、快取或傳送的內容。</p></section>
+<section aria-labelledby="contact"><h2 id="contact">聯絡管理者</h2><p>如有資料使用、保留或刪除相關問題，請來信：<a href="mailto:afei200077@gmail.com">afei200077@gmail.com</a>。</p></section>
+</main>
+<footer><p>MorningBriefBot · 超市內部晨報工具</p><p>聯絡管理者：<a href="mailto:afei200077@gmail.com">afei200077@gmail.com</a></p></footer>
+</body>
+</html>
